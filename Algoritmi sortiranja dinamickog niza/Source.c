@@ -8,6 +8,8 @@
 
 //SPECIFIKACIJA FUNKCIJA
 
+void pocetniEkran();
+
 //Dinamciki niz
 void prikazNiza(int* niz, int n);
 void ubaciElement(int** niz, int broj, int* brojElemenata, int* kapacitet);
@@ -52,6 +54,8 @@ void prikazNizaQuickSort(int niz[], int n, int pivot);
 
 //GLAVNA FUNKCIJA
 int main(void) {
+
+	pocetniEkran();
 
 	int* niz = NULL;  //Pocetna adresa niza
 	int kapacitet = 0; //Pocetni kapacitet niza
@@ -565,4 +569,10 @@ void prikazNizaQuickSort(int niz[], int n, int pivot) {
 		}
 	}
 	printf("\n");
+}
+
+void pocetniEkran() {
+	printf("\n\n\n\n\n\n                                  \
+DOBRODOSLI U ALGORITME SORTIRANJA DINAMICKOG NIZA\n\n\n\n\n\n\n\n                                          ");
+	system("pause");
 }
